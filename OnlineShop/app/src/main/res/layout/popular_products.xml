@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgpopular"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:id="@+id/txtnew"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="New"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/txtdiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30%"
+        android:textSize="22sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/txtnew"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/txtpopularmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apple"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/txtnew"
+        app:layout_constraintLeft_toLeftOf="@id/txtnew"
+        />
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iphone 10plus"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/txtpopularmodel"
+        app:layout_constraintLeft_toLeftOf="@id/txtpopularmodel"/>
+    <RatingBar
+        android:id="@+id/popularrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="3"
+        android:layout_marginTop="8dp"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        app:layout_constraintTop_toBottomOf="@+id/txtname"
+        app:layout_constraintLeft_toLeftOf="@id/txtnew"
+        />
+    <TextView
+        android:id="@+id/popularprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20000ks"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/popularrating"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="@+id/txtnew"/>
+    <TextView
+        android:id="@+id/populardiscountprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30000ks"
+        app:layout_constraintLeft_toRightOf="@id/popularprice"
+        app:layout_constraintTop_toBottomOf="@+id/popularrating"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        android:background="@drawable/discount"
+        android:layout_marginLeft="10dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

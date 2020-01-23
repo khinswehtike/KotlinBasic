@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OnlineShopping</string>
+    <string name="arrival">Latest Arrivals</string>
+    <string name="show_all">Show All</string>
+    <string name="choose">Choose Country</string>
+    <string name="popular">Popular Products</string>
+    <string name="pp">Popular Products</string>
+
+</resources>

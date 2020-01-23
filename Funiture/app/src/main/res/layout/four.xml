@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <ImageView
+            android:id="@+id/image_two"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:background="#D6CCBC"
+            android:src="@drawable/browsebran"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_main"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/txt_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BROWSE BY"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="285dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:text="Brand"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_three" />
+
+        <TextView
+            android:id="@+id/txt_arrival"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_main"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/arrival"
+            android:background="#CA984E"
+            android:layout_marginLeft="10dp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/txt_showall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_all"
+            app:layout_constraintBaseline_toBaselineOf="@+id/txt_arrival"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_arrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txt_arrival"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/txt_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_arrival"
+            app:layout_constraintLeft_toLeftOf="@+id/txt_arrival"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txt_choose"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+        <ImageView
+            android:id="@+id/img_callnow"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_arrival"
+
+            android:background="#D6CCBC"
+            android:src="@drawable/browsebran"
+            />
+        <TextView
+            android:id="@+id/txt_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEED HELP?"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_callnow"
+            />
+        <TextView
+            android:id="@+id/txt_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CUSTOMER SERVICE"
+            app:layout_constraintTop_toBottomOf="@+id/txt_help"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Call Now"
+            app:layout_constraintTop_toBottomOf="@+id/txt_service"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+
+        <TextView
+            android:id="@+id/txt_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_choose"
+            app:layout_constraintLeft_toLeftOf="@+id/txt_arrival"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_popular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/txt_popular"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

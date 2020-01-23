@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<TextView
+    android:layout_marginTop="30dp"
+    android:id="@+id/txt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Khin Swe Htike"
+    android:textStyle="bold"
+    android:textSize="30sp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@+id/img"
+    app:layout_constraintHorizontal_chainStyle="spread"
+    />
+    <ImageView
+        app:layout_goneMarginTop="30dp"
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundedimage"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/txt"
+
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="60dp"
+        app:layout_constraintTop_toBottomOf="@id/txt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_placeholder"
+        />
+    <TextView
+        android:id="@+id/txto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yangon"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/txt"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/img"/>
+    <Button
+        android:id="@+id/btno"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txto"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Follow"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundedbtnhm"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+
+
+
+    <TextView
+        android:id="@+id/txtw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="43"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/btno"
+        app:layout_constraintRight_toLeftOf="@+id/txtt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/txtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12550"
+        android:textStyle="bold"
+        android:layout_marginLeft="65dp"
+        app:layout_constraintTop_toBottomOf="@id/btno"
+        app:layout_constraintLeft_toRightOf="@+id/txtw"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtw"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="posts"
+
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txtw"
+        app:layout_constraintRight_toLeftOf="@+id/txt5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="followers"
+
+        android:layout_marginLeft="50dp"
+        app:layout_constraintTop_toBottomOf="@id/txtt"
+        app:layout_constraintLeft_toRightOf="@+id/txt4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt4"
+        android:textSize="20sp"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/imgone"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bb"
+        android:layout_marginLeft="75dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/imgtwo"
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+        />
+    <ImageView
+        android:id="@+id/f1"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_social"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <ImageView
+        android:id="@+id/f2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_linkedin"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgtwo"
+       app:layout_constraintLeft_toRightOf="@+id/f1"
+        />
+    <ImageView
+        android:id="@+id/f3"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_instagram"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgthree"
+        app:layout_constraintLeft_toRightOf="@+id/f2"
+        />
+    <ImageView
+        android:id="@+id/f4"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_pinterest"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgfour"
+        app:layout_constraintLeft_toRightOf="@+id/f3"
+        />
+    <ImageView
+        android:id="@+id/f5"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_twitter"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgfive"
+        app:layout_constraintLeft_toRightOf="@+id/f4"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgtwo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/dd"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txt5"
+        app:layout_constraintLeft_toRightOf="@+id/imgone"
+        app:layout_constraintRight_toLeftOf="@+id/imgthree"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgthree"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/dd"
+        app:layout_constraintLeft_toRightOf="@+id/imgtwo"
+        app:layout_constraintRight_toLeftOf="@+id/imgfour"
+        app:layout_constraintTop_toBottomOf="@+id/txt4"
+
+        />
+
+    <ImageView
+        android:id="@+id/imgfour"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ee"
+        app:layout_constraintTop_toBottomOf="@+id/txt4"
+        app:layout_constraintLeft_toRightOf="@+id/imgthree"
+        app:layout_constraintRight_toLeftOf="@+id/imgfive"
+
+
+        />
+    <ImageView
+        android:id="@+id/imgfive"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/gg"
+        app:layout_constraintTop_toBottomOf="@+id/txt4"
+        app:layout_constraintLeft_toRightOf="@+id/imgthree"
+       app:layout_constraintRight_toRightOf="parent"
+
+
+        />
+
+    <View
+        android:id="@+id/hr"
+        android:layout_width="410dp"
+        android:layout_height="1.5dp"
+        android:layout_margin="100dp"
+        android:layout_marginTop="68dp"
+        android:background="#918686"
+        app:layout_constraintTop_toBottomOf="@+id/imgone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-15dp" />
+
+    <TextView
+        android:id="@+id/txtab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="About"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hr" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+      android:layout_margin="10dp"
+        android:textSize="20dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtab"
+        android:text="Him poetic eye.Searched any remedies.Trial
+                       was poverty a shemes him he.Him poetic eye.Searched any remedies.Trial was poverty a shemes him he"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

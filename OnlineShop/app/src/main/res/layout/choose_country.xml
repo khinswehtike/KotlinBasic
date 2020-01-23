@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/img_coountry"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:src="@drawable/japan"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/txtcountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffeeff"
+        app:layout_constraintBottom_toBottomOf="@+id/img_coountry"
+        android:text="Japan"
+        app:layout_constraintLeft_toLeftOf="@+id/img_coountry"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="10dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

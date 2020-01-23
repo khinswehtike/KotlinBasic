@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<TextView
+    android:id="@+id/txt_a"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Android Davelopment"
+    android:textColor="#E21A0B"
+    android:layout_marginHorizontal="50dp"
+    android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/txt_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BootCamp"
+        android:textColor="#300B70"
+        android:layout_below="@+id/txt_a"
+        android:textSize="30sp"
+        android:layout_marginVertical="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Layout Example"
+        android:textColor="#3F51B5"
+        android:layout_toRightOf="@id/txt_b"
+        android:layout_below="@id/txt_a"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:textSize="30sp"
+        android:textColor="#E21A0B"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
